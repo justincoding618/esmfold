@@ -21,3 +21,7 @@ def render_molecule(pdb):
 # Inputing Protein Sequence
 DEFAULT_SEQ = "Insert your protein sequence here"
 txt = st.sidebar.text_area('Input Sequence', DEFAULT_SEQ, height=275)
+
+# The ESMFold Application
+def update(sequence=txt):
+	
