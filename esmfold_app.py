@@ -17,3 +17,7 @@ def render_molecule(pdb):
 	pdbview.zoom(2, 800)
 	pdbview.spin(True)
 	showmol(pdbview, height = 500, width = 800)
+
+# Inputing Protein Sequence
+DEFAULT_SEQ = "Insert your protein sequence here"
+txt = st.sidebar.text_area('Input Sequence', DEFAULT_SEQ, height=275)
