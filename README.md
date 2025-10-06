@@ -6,7 +6,7 @@ The first thing you'll need to do is create a virtrual environment to run your s
 
 Alternatively, you can also install a streamlit virtual enviornment in the terminal, which you can find here:  https://docs.streamlit.io/get-started/installation/command-line
 
-Once you have setup your vitrual environement, you will run the command `conda activate [yourstreamlitenv_name]`.
+Once you have setup your vitrual environement, you will run the command `conda activate [yourstreamlitenv_name]` (replace with your virtual environment name).
 
 ## Installing Libraries to Your Virtual Environment
 Once you have activated your virtual environment, you will need to install the following:
