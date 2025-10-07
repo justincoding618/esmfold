@@ -107,4 +107,4 @@ if uploaded_file is not None:
     )
 
 if not predict and uploaded_file is None:
-    st.warning('Please enter your protein sequence and click Predict, or upload a PDB file!')
+    st.warning('Please either enter your protein sequence and click Predict or upload a PDB file!')
