@@ -98,17 +98,18 @@ def plot_plddt_scores(structure):
     
     # Add confidence level annotations
     fig.add_hline(y=90, line_dash="dash", line_color="green", 
-                  annotation_text="Very high (>90)")
+                  annotation_text="Very High (>90)")
     fig.add_hline(y=70, line_dash="dash", line_color="orange", 
-                  annotation_text="Confident (>70)")
+                  annotation_text="High (>70)")
     fig.add_hline(y=50, line_dash="dash", line_color="red", 
-                  annotation_text="Low (<50)")
+                  annotation_text="Low (>50), Very Low (<50)",
+                  )
     
     return fig
 
 # Sidebar input
 st.sidebar.subheader("Input Options")
-st.sidebar.write('You can either try your own amino acid sequence or try an example.')
+st.sidebar.write('You can either try your own amino acid sequence or an example.')
 
 # Example sequences
 EXAMPLES = {
@@ -230,7 +231,7 @@ if st.session_state.prediction_result is not None:
         ['spectrum', 'chain', 'secondary'],
         format_func=lambda x: {'spectrum': 'Spectrum (N→C)', 'chain': 'Chain', 'secondary': 'Secondary Structure'}[x]
     )
-    spin_enabled = st.sidebar.checkbox("Enable rotation", value=False)
+    spin_enabled = st.sidebar.checkbox("Enable rotation", value=True)
 
 # File upload option
 st.markdown("---")
