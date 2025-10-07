@@ -271,7 +271,7 @@ if st.session_state.prediction_result is not None:
         if result['sequence']:
             st.metric("Sequence Length", f"{len(result['sequence'])} aa")
     with col3:
-        confidence_label = "Very High" if b_value > 90 else "High" if b_value > 70 else "Low" if b_value > 50 else "Very Low"
+        confidence_label = "Very High" if b_value > 90 else "High" if b_value > 70 else "Low" if b_value >= 50 else "Very Low"
         st.metric("Confidence", confidence_label)
     
     st.markdown("---")
