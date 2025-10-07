@@ -102,7 +102,7 @@ def plot_plddt_scores(structure):
     fig.add_hline(y=70, line_dash="dash", line_color="orange", 
                   annotation_text="High (>70)")
     fig.add_hline(y=50, line_dash="dash", line_color="red", 
-                  annotation_text="Low (>50), Very Low (<50)",
+                  annotation_text="Low (>=50), Very Low (<50)",
                   )
     
     return fig
