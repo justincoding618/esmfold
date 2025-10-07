@@ -1,5 +1,5 @@
 # esmfold
-A bioinformatics app that predicts protein structures of a given amino acid sequence.  If the API is down, there is an alternative option to use the Google Colab Notebook that utilizes the AlphaFold2 model.  You can paste the sequence there and download the results and upload the pdb file to display the results.
+This ESMFold application is a bioinformatics app that predicts protein structures of a given amino acid sequence.  If the API is down, there is an alternative option where you can use the Google Colab Notebook that utilizes the AlphaFold2 model (you will see the hyperlink when you run the app).  You can paste the sequence there and download the results and upload the pdb file to display the results.
 
 ## Running the Application Locally
 The first thing you'll need to do is create a virtrual environment to run your streamlit app.  You will need to install Anaconda (or miniconda can work if you want to do custom setups yourself).  After installing Anaconda (or miniconda), you will then setup the virtual environment as mentioned in the steps here:  https://docs.streamlit.io/get-started/installation/anaconda-distribution
@@ -25,7 +25,7 @@ After installing the libraries and activating the enviornment, you will then run
 ## Acknowledgements
 Special thanks goes to the following:
 
-* [David Koes][https://github.com/dkoes] for innovating the py3Dmol plugin.
-* [Data Professor][https://www.youtube.com/@DataProfessor] for coming up with the idea of making an ESMFold-like prediction application.
+* <a href="https://github.com/dkoes">David Koes</a> for innovating the py3Dmol plugin.
+* <a href="https://www.youtube.com/@DataProfessor">Data Professor</a> for coming up with the idea of making an ESMFold-like prediction application.
 
 
