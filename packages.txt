@@ -1,4 +1,4 @@
-The following packages were obtained through the pip install command and used for the project:
+The following packages were used for the project:
 
 streamlit
 stmol
