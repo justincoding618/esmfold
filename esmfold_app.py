@@ -222,17 +222,6 @@ def update(sequence=txt):
 
 predict = st.sidebar.button('Predict', on_click=update, type="primary")
 
-# Visualization options
-if st.session_state.prediction_result is not None:
-    st.sidebar.markdown("---")
-    st.sidebar.subheader("Visualization Options")
-    color_scheme = st.sidebar.selectbox(
-        "Color scheme:",
-        ['spectrum', 'chain', 'secondary'],
-        format_func=lambda x: {'spectrum': 'Spectrum (N→C)', 'chain': 'Chain', 'secondary': 'Secondary Structure'}[x]
-    )
-    spin_enabled = st.sidebar.checkbox("Enable rotation", value=True)
-
 # File upload option
 st.markdown("---")
 st.subheader("Alternative: Upload a Pre-Computed PDB File")
@@ -254,6 +243,17 @@ if uploaded_file is not None:
         'sequence': None
     }
     st.session_state.pdb_string = pdb_string
+
+# Visualization options
+if st.session_state.prediction_result is not None:
+    st.sidebar.markdown("---")
+    st.sidebar.subheader("Visualization Options")
+    color_scheme = st.sidebar.selectbox(
+        "Color scheme:",
+        ['spectrum', 'chain', 'secondary'],
+        format_func=lambda x: {'spectrum': 'Spectrum (N→C)', 'chain': 'Chain', 'secondary': 'Secondary Structure'}[x]
+    )
+    spin_enabled = st.sidebar.checkbox("Enable rotation", value=True)
 
 # Display results
 if st.session_state.prediction_result is not None:
