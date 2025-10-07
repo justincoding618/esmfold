@@ -26,6 +26,6 @@ After installing the libraries and activating the enviornment, you will then run
 Special thanks goes to the following:
 
 * <a href="https://github.com/dkoes">David Koes</a> for innovating the py3Dmol plugin.
-* <a href="https://www.youtube.com/@DataProfessor">Data Professor</a> for coming up with the idea of making an ESMFold-like prediction application.
+* <a href="https://github.com/dataprofessor">Data Professor</a> for coming up with the idea of making an ESMFold-like prediction application.
 
 
