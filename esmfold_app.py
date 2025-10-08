@@ -6,6 +6,7 @@ import requests
 import biotite.structure.io as bsio
 import re
 import plotly.graph_objects as go
+import pyautogui
 
 # Page configuration
 st.set_page_config(page_title="ESMFold Protein Structure Predictor", layout="wide")
@@ -109,7 +110,7 @@ def plot_plddt_scores(structure):
 
 # Sidebar input
 st.sidebar.subheader("Input Options")
-st.sidebar.write('You can either try your own amino acid sequence or an example.')
+st.sidebar.write('You can either try your own amino acid sequence or an example.  However, the sequence length needs to be at least 10 amino acids and no more than 400 amino acids.')
 
 # Example sequences
 EXAMPLES = {
@@ -254,6 +255,10 @@ if st.session_state.prediction_result is not None:
         format_func=lambda x: {'spectrum': 'Spectrum (N→C)', 'chain': 'Chain', 'secondary': 'Secondary Structure'}[x]
     )
     spin_enabled = st.sidebar.checkbox("Enable rotation", value=True)
+
+# Option to reset
+if st.sidebar.button('Reset', type="tertiary"):
+    pyautogui.hotkey("ctrl", "F5")
 
 # Display results
 if st.session_state.prediction_result is not None:
