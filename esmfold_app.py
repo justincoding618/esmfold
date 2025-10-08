@@ -110,7 +110,7 @@ def plot_plddt_scores(structure):
 
 # Sidebar input
 st.sidebar.subheader("Input Options")
-st.sidebar.write('You can either try your own amino acid sequence or an example.  However, the sequence length needs to be at least 10 amino acids and no more than 400 amino acids.')
+st.sidebar.write('You can either try your own amino acid sequence or an example.  However, the sequence length needs to be between 10-400 amino acids.')
 
 # Example sequences
 EXAMPLES = {
