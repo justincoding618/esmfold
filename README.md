@@ -9,7 +9,7 @@ Alternatively, you can also install a streamlit virtual enviornment in the termi
 Once you have setup your vitrual environement, you will run the command `conda activate [yourstreamlitenv_name]` (replace with your virtual environment name).
 
 ## Installing Libraries for Your Virtual Environment
-Along with setting up your virtual environment, you will need to install the following for the virtual environment to work:
+Along with setting up your virtual environment, you will need to install the following (outside your virtual envrionment and within your working machine) for the virtual environment to work:
 
 * `pip install streamlit`
 * `pip install stmol`
