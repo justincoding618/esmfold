@@ -333,7 +333,7 @@ elif not predict and uploaded_file is None:
         
         **Step 3:** Explore your results
         - View the 3D structure
-        - Check confidence scores
+        - Check confidence scores and the corresponding plot
         - Download the PDB file
         
         **Alternative:** If the API is unavailable, you may upload a pre-computed PDB file from the AlphaFold Google Colab notebook.
