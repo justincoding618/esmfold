@@ -101,7 +101,7 @@ def plot_plddt_scores(structure):
     fig.add_hline(y=90, line_dash="dash", line_color="green", 
                   annotation_text="Very High (>90)")
     fig.add_hline(y=70, line_dash="dash", line_color="orange", 
-                  annotation_text="High (>70)")
+                  annotation_text="Confident (>70)")
     fig.add_hline(y=50, line_dash="dash", line_color="red", 
                   annotation_text="Low (>=50), Very Low (<50)",
                   )
@@ -276,7 +276,7 @@ if st.session_state.prediction_result is not None:
         if result['sequence']:
             st.metric("Sequence Length", f"{len(result['sequence'])} aa")
     with col3:
-        confidence_label = "Very High" if b_value > 90 else "High" if b_value > 70 else "Low" if b_value >= 50 else "Very Low"
+        confidence_label = "Very High" if b_value > 90 else "Confident" if b_value > 70 else "Low" if b_value >= 50 else "Very Low"
         st.metric("Confidence", confidence_label)
     
     st.markdown("---")
@@ -299,7 +299,7 @@ if st.session_state.prediction_result is not None:
         
         st.write("**Confidence levels:**")
         st.write("Very High: > 90")
-        st.write("High: 70-90")
+        st.write("Confident: 70-90")
         st.write("Low: 50-70")
         st.write("Very Low: < 50")
     
