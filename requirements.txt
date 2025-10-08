@@ -1,1 +1,6 @@
-Make sure you are able to use the latest versions of the required libraries that are used in the application.
+streamlit
+stmol
+py3Dmol
+requests
+biotite
+pyautogui
