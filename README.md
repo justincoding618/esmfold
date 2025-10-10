@@ -6,19 +6,10 @@ The first thing you'll need to do is create a virtrual environment to run your s
 
 Alternatively, you can also install a streamlit virtual enviornment in the terminal, which you can find here:  https://docs.streamlit.io/get-started/installation/command-line
 
-Once you have setup your vitrual environement, if you set it up through the Anaconda Navigator, you will need to activate the virtual environment through the Anaconda Navigator.  If you setup the virtual environment through commands, you will run the command `conda activate [yourstreamlitenv_name]` (replace with your virtual environment name).
+Once you have setup your vitrual environement, you can either activate it through the Anaconda Navigator or run the command `conda activate [yourstreamlitenv_name]` (replace with your virtual environment name).
 
 ## Installing Libraries for Your Virtual Environment
-Along with setting up your virtual environment, you will need to install the following (outside your virtual envrionment and within your working machine) for the virtual environment to work:
-
-* `pip install streamlit`
-* `pip install stmol`
-* `pip install py3Dmol`
-* `pip install requests`
-* `pip install biotite`
-* `pip install pyautogui`
-
-You may need to install additional libraries if necessary (the command output will tell you which ones you need if you don't have them).  Alternatively, you can create the requirements.txt file to type in all the needed libraries and use the requirements.txt file and type `pip install -r requirements.txt` to install all the necessary libraries.
+After setting up and activating your virtual environment, you will need to install the libraries stated in the `requirements.txt` file for the virtual environment to work.  You will type `pip install -r requirements.txt` to install all the necessary libraries.
 
 ## Running the Application
 After installing the libraries and activating the enviornment, you will then run your application by typing `streamlit run esmfold_app.py`.  Running this command will open the app locally through your browser.  You should then be able to play with the application!
