@@ -18,7 +18,7 @@ Along with setting up your virtual environment, you will need to install the fol
 * `pip install biotite`
 * `pip install pyautogui`
 
-You may need to install additional libraries if necessary (the command output will tell you which ones you need if you don't have them).  Alternatively, you can create the requirements.txt file to type in all the needed libraries and use the requirements.txt file and type `pip install requirements.txt` to install all the necessary libraries.
+You may need to install additional libraries if necessary (the command output will tell you which ones you need if you don't have them).  Alternatively, you can create the requirements.txt file to type in all the needed libraries and use the requirements.txt file and type `pip install -r requirements.txt` to install all the necessary libraries.
 
 ## Running the Application
 After installing the libraries and activating the enviornment, you will then run your application by typing `streamlit run esmfold_app.py`.  Running this command will open the app locally through your browser.  You should then be able to play with the application!
